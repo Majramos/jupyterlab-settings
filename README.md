@@ -11,7 +11,7 @@ Built to be used both in powershell and bash (through wsl or not)
 ## Installation
 
 ```bash
-git clone https://github.com/Majramos/jupyterlab-settings
+git clone https://github.com/Majramos/jupyterlab-settings.git
 
 cd jupyterlab-settings
 ```
