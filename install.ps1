@@ -1,7 +1,7 @@
 <#
 script to copy my jupyter lab configuration settings to the respective folder
 
-exprect location of settings as per jupyter lab documentation:
+expected location of settings as per jupyter lab documentation:
 https://jupyterlab.readthedocs.io/en/stable/user/directories.html#jupyterlab-user-settings-directory
 #>
 
@@ -19,8 +19,8 @@ function check { Param ($1) Test-Path -Path $1 -PathType Container }
 
 
 if (!(check($settings))) {
-    # if folder does not exists creat it
-    "Creating folder: "+$setting
+    # if folder does not exists create it
+    "Creating folder: "+$settings
     New-Item -Path $settings -ItemType Directory | Out-Null
 }
 
