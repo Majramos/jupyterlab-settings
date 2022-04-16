@@ -5,11 +5,10 @@
 # expected location of settings as per jupyter lab documentation:
 # https://jupyterlab.readthedocs.io/en/stable/user/directories.html#jupyterlab-user-settings-directory
 
-if [[ "$(</proc/sys/kernel/osrelease)" == *microsoft* ]]; then
+if [[ "$1" == "wsl" ]]; then
     echo "Runing in wsl"
     HOME="/mnt/c/Users/859494"
 fi
-
 
 tocopy="$PWD/user-settings/."
 

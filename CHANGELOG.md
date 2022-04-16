@@ -7,17 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 ### Changed
+
 ### Deprecated
+
 ### Removed
+
 ### Fixed
+
 ### Security
 
 
-## [1.0.0] - 2017-06-20
+## [x.x.x] - yyyy-mm-dd
 
 ### Added
- - initial commit
+ - Initial commit
 
 
 

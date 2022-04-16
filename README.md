@@ -23,7 +23,7 @@ Install in windows
 
 Install in windows with wsl
 ```bash
-bash ./install.sh
+bash ./install.sh wsl
 ```
 
 Install in linux
