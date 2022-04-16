@@ -18,11 +18,15 @@ settings="$lab/user-settings"
 # to store a backup of existing settings
 default="$lab/default_user-settings"
 
+echo $tocopy
+echo $lab
+echo $settings
+echo $default
+
 
 if [ ! -d "$settings" ]; then
-    # if folder does not exists create it
     echo "Creating folder: $settings"
-    mkdir "$settings"
+    mkdir -p "$settings"
 fi
 
 
@@ -30,7 +34,7 @@ if [ "$(ls -A $settings)" ]; then
     echo "Found files in target folder"
     if [ ! -d "$default" ]; then
         echo "Making backup before overwrite"
-        mkdir "$default"
+        mkdir -p "$default"
         cp -r "$tocopy" "$default"
     else
         echo "Found existing backup"
