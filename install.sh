@@ -18,12 +18,6 @@ settings="$lab/user-settings"
 # to store a backup of existing settings
 default="$lab/default_user-settings"
 
-echo $tocopy
-echo $lab
-echo $settings
-echo $default
-
-
 if [ ! -d "$settings" ]; then
     echo "Creating folder: $settings"
     mkdir -p "$settings"
