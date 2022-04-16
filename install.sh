@@ -10,7 +10,7 @@ if [[ "$1" == "wsl" ]]; then
     HOME="/mnt/c/Users/859494"
 fi
 
-tocopy="$PWD/user-settings/."
+tocopy="$(dirname "${BASH_SOURCE[0]}")/user-settings/."
 
 # location of the folder were jupyter settings are stored
 lab="$HOME/.jupyter/lab"
